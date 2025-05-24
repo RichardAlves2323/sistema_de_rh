@@ -1,9 +1,14 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/home";
+
 function App() {
 
   return (
-    <>
-      <img src="/em_construcao.png" width="100%" alt="Em construção" />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
